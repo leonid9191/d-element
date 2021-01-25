@@ -12,6 +12,17 @@ body{
     max-width: 940px;
     margin: 0 auto;
 }
+@media (max-width: 1023px){
+    .container {
+        max-width: 760px;
+
+    }
+}
+@media (max-width: 776px){
+    .container {
+        max-width: 500px;
+    }
+}
 
 
 @import '../blocks/promo';
@@ -19,3 +30,4 @@ body{
 @import '../blocks/button';
 @import '../blocks/card';
 @import '../blocks/_what_we_do.scss';
+@import '../blocks/_ourClient.scss';

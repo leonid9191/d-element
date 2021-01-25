@@ -64,8 +64,8 @@
         }
         &__img{
             content: url('../img/women_icons.png');
-            height:80%;
-            right: 40px;
+            height:70%;
+            right: -20px;
             margin-top: 75px;
         }
 
@@ -109,6 +109,7 @@
         &__img{
             margin-top: 10px;
             height:30%;
+            right: 0
         }
     }
 }

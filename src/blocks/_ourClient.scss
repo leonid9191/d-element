@@ -1,0 +1,106 @@
+.ourClient{
+    padding-bottom: 96px;
+    background: #5A98D0;
+    border-radius: 200px 0px 0px 0px;
+    &__titles{
+        display: flex;
+        padding-top: 96px;
+    }
+    &__title{
+        font-family: Gilroy;
+        font-size: 36px;
+        line-height: 46px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        }
+    &__subtitle{
+        margin-left: 97px;       
+        width: 540px;
+        font-family: Gilroy;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        opacity: 0.6;
+    }
+
+
+    &__table{
+        margin: 0 auto;
+        margin-top: 123px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill ,234px);
+        background: white;
+        gap: 1px;
+        align-content: space-between;          
+        justify-content: space-between;
+
+    }
+    &__cell{
+        font-family: Gilroy;
+        font-size: 20px;
+        line-height: 46px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 1.5rem;
+        background:  #5A98D0;
+    }
+    &__cell:nth-last-child(){
+        color: black;
+    }
+}
+
+@media screen and (max-width: 1200px){
+
+}
+@media (max-width: 1023px){
+    .ourClient{
+        &__table{
+            width: 469px;
+            grid-template-columns: repeat(2 ,234px);
+            align-content: center;          
+            justify-content:center;
+        }
+    }
+}
+
+@media (max-width: 776px){
+    .ourClient{
+        &__title{
+            font-size: 24px;
+            line-height: 24px;
+        }
+        &__subtitle{
+            width: auto;
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 575px) and (min-width: 360px){
+    .ourClient{
+        &__titles{
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        &__title{
+            margin: 0 auto;
+            text-align: center;
+        }
+        &__subtitle{
+            margin: 0 auto;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 12px;
+        }
+        &__table{
+            width: 234px;
+            margin-top: 50px;
+            grid-template-columns: repeat(1 ,234px);
+            align-content: center;          
+            justify-content:center;
+        }
+        
+    }
+}
