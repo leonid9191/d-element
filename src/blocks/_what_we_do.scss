@@ -1,0 +1,23 @@
+.what_we_do{
+    // display: flex;
+    // flex-direction: row;
+    // justify-content:space-between;
+    position: relative;
+    &__title{
+        width: 358px;
+        height: 138px;
+        position: absolute;
+        margin-top: 192px;
+        font-family: Gilroy;
+        font-size: 36px;
+        line-height: 46px;
+        letter-spacing: 0.05em;
+        color: #316099;
+        
+    }
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
