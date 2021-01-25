@@ -1,0 +1,114 @@
+.promo{ 
+        min-height: 768px;
+        background: linear-gradient(0deg, #eaf3fa 8.84%, rgba(152, 195, 232, 0) 31.12%) center (center/cover) no-repeat;
+
+    &__wrapper{
+        margin-top: 11px;
+        // margin-left: 213px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+    &__header{
+        position: relative;
+        margin-top: 101px;
+        color: #1f3f68;
+        font-size: 64px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-align: left; 
+        z-index: 2;
+    }
+    &__subheader{
+        position: relative;
+        max-width: 425px;
+        margin-top: 32px;
+        opacity: 0.6;
+        color: #1f3f68;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.8px;
+        text-align: left;
+        z-index: 2;
+        
+    }
+    &__img{
+        position: absolute;
+        right: -130px;
+        z-index: 0;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .promo{
+        &__wrapper{
+            margin-left: 150px;
+        }
+        &__img{
+            content: url('../img/man_women.png');
+            right: -30px;
+            height:60%;
+            margin-top: 90px;
+        }
+    }
+}
+@media (max-width: 1023px){
+    .promo{
+        &__wrapper{
+            margin-left: 120px;
+        }
+        &__header{
+            font-size: 50px;
+        }
+        &__img{
+            content: url('../img/women_icons.png');
+            height:80%;
+            right: 40px;
+            margin-top: 75px;
+        }
+
+    }
+    
+}
+
+@media (max-width: 776px){
+    .promo{
+        min-height: 550px;
+        &__wrapper{
+            margin: 0 auto;
+            justify-content: center;
+            text-align: center;
+        }
+        &__header{
+            font-size: 40px;
+            text-align: center;
+        }
+        &__subheader{
+            text-align: center;
+        }
+        &__img{
+            margin-top: 30px;
+            height:40%;
+        }
+    }
+}
+
+@media (max-width: 575px) and (min-width: 360px){
+    .promo{     
+        &__header{
+            font-size: 25px;
+            text-align: center;
+        }
+        &__subheader{
+            max-width: 250px;
+            font-size: 15px;
+            text-align: center;
+        }
+        &__img{
+            margin-top: 10px;
+            height:30%;
+        }
+    }
+}

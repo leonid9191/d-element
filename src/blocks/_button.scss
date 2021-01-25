@@ -1,0 +1,25 @@
+.button{
+    width: 220px;
+    height: 56px;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    background-color: #5a98d0;
+    border:none;
+    color: #ffffff;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    &_promo{
+        margin-top: 71px;
+    }
+}
+
+@media (max-width: 575px) and (min-width: 360px){
+    .button{
+        &_promo{
+            width: 150px;
+            font-size: 14px;
+        }
+    }
+}
